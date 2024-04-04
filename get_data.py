@@ -90,8 +90,8 @@ def get_data_user(client, group):
     path_file = 'data/user/' + phone + "_" + group_id + '.json'
 
     for user in all_participants:
-        # print(user)
-        # print(type(user.status))
+         print(user)
+         print(type(user.status))
         try:
             if isinstance(user.status, UserStatusRecently):
                 date_online_str = 'online'

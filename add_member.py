@@ -149,7 +149,7 @@ while i < total_user:
         print('Added member '+ user['username'] +' successfully ;-)')
         count_add += 1
         print('sleep: ' + str(120 / total_client))
-        time.sleep(120 / total_client)
+        time.sleep(60 / total_client)
 
     except PeerFloodError as e:
         print("Error Fooling cmnr")
@@ -185,3 +185,4 @@ for cli in clients:
 end_time = datetime.datetime.now()
 print("total: " + str(count_add))
 print("total time: " + str(end_time - start_time))
+                                                   
